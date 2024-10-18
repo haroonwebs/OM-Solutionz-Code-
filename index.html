@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Project</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">Add Logo Here.. </div>
-        <div class="search">
-          <input
-            type="search"
-            name="search"
-            id="1"
-            placeholder="Type here..."
-          />
-          <button>Search</button>
-        </div>
+    <div class="header">
+      <div class="logo">Add Logo</div>
+      <div class="search">
+        <input type="search" name="search" id="1" placeholder="Search" />
+        <button>
+          <i
+            class="fa fa-search"
+            aria-hidden="true"
+            style="font-size: 25px; color: rgb(178, 186, 194)"
+          ></i>
+        </button>
+        <span></span>
       </div>
+    </div>
 
+    <div class="container">
       <div class="main">
         <div class="orderTable">
+          <div class="select">
           <h2>Orders Table</h2>
+          <select name="sort by" >
+            <option value="">sort by</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          </div>
           <div class="Data">
             <div class="orders">
               <div class="Name">Haroon</div>
@@ -72,14 +85,32 @@
             <h2>Orders Graph</h2>
             <span><input type="date" name="" id="" /></span>
           </div>
-          <div class="Graph-pic"><img src="./Graph2.png" alt="Photo not Fond"></div>
+          <div class="Graph-pic">
+            <img src="./Graph2.png" alt="Photo not Fond" width="" />
+          </div>
           <div class="checkbox">
-            <span><label for="checkbox1">Pending</label> <input type="checkbox" name="Pending" id=""></span>
-            <span><label for="checkbox1">Completed</label> <input type="checkbox" name="Completed" id=""></span>
-            <span><label for="checkbox1">Rejected</label> <input type="checkbox" name="Rejected" id=""></span>
-            <span><label for="checkbox1">Incomplete</label> <input type="checkbox" name="Incomplete" id=""></span>
-        </div>
-        <div class="btn-download"><button>Download Results</button></div>
+            <span
+              ><label for="checkbox1">Pending</label>
+              <input type="checkbox" name="Pending" id=""
+            /></span>
+            <span
+              ><label for="checkbox1">Completed</label>
+              <input type="checkbox" name="Completed" id=""
+            /></span>
+            <span
+              ><label for="checkbox1">Rejected</label>
+              <input type="checkbox" name="Rejected" id=""
+            /></span>
+            <span
+              ><label for="checkbox1">Incomplete</label>
+              <input type="checkbox" name="Incomplete" id=""
+            /></span>
+          </div>
+          <div class="btn-download">
+            <button>
+              Download Results <i class="fa fa-download" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
